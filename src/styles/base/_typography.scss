@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import '../abstracts/variables';
+* {
+  font-family: $font-family;
+}
+
+h2 {
+  letter-spacing: 0.15em;
+}
+
+.text-minor {
+  color: #BABABA;
+}

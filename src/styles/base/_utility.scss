@@ -1,0 +1,43 @@
+@import '../abstracts/variables';
+@each $name, $justify in $flexs {
+  @each $name1, $align in $flexs {
+    .flex-#{$name}-#{$name1} {
+      display: flex;
+      justify-content: $justify;
+      align-items: $align;
+    }
+    .flex-col-#{$name}-#{$name1} {
+      display: flex;
+      flex-direction: column;
+      justify-content: $justify;
+      align-items: $align;
+    }
+  }
+
+  .flex--#{$name} {
+    display: flex;
+    align-items: $justify;
+  }
+
+  .flex-#{$name} {
+    display: flex;
+    justify-content: $justify;
+  }
+
+  .flex-col--#{$name} {
+    display: flex;
+    flex-direction: column;
+    align-items: $justify;
+  }
+
+  .flex-col-#{$name} {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+  }
+  
+}
+
+.flex {
+  display: flex;
+}
